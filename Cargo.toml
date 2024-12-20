@@ -1,0 +1,18 @@
+[package]
+name = "demo_cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = { version = "1.0.94" } # Used for creating Errors
+clap = { version = "4.0", features = ["derive"] } # CLI Argument Parser
+dialoguer = "0.11.0" # Interactive User Inputs
+tokio = { version = "1", features = ["full"] } # Used for async programming
+cynic = { version = "3", features = ["http-surf"] } # GraphQL client for rust
+surf = "2" # HTTP client framework
+serde = {version = "1.0.136", features = ["derive"]}
+serde_json = {version = "*"}
+serde_yml = "0.0.12"
+indicatif = "0.17.9" # Progress Bar for CLI
+
+
